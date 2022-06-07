@@ -31,6 +31,7 @@ test('Wrong type but passes', () => {
 			this.text = text
 		}
 	}
+	customElements.define('add-to-me', AddToMeWorkButTestFails);
 	const addToMe = new AddToMeWorkButTestFails();
 	appendTitle(addToMe);
 	expect(addToMe.text).toBe('Welcome to an introduction to JavScript and Typescript!')
