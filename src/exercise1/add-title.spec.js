@@ -17,11 +17,11 @@ test('Check if the JS is working', () => {
 
 test('Calling appendTitle will throw an error', () => {
 	const addToMe = {};
-	appendTitle(addTome);
-	const h1 = element.querySelector('h1');
+	appendTitle(addToMe);
+	const h1 = addToMe.querySelector('h1');
 
 	expect(h1).not.toBeNull();
-	expect(h1.textContent).toBe('Welcome to an introduction to JavaScript and Typescript!')
+	expect(h1?.textContent).toBe('Welcome to an introduction to JavaScript and Typescript!')
 })
 
 test('Wrong type but passes', () => {
